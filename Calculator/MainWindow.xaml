@@ -7,23 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Calc" HorizontalAlignment="Left" Margin="378,40,0,0" VerticalAlignment="Top" Width="36"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="410,192,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_6"/>
-        <Button Content="x" HorizontalAlignment="Left" Margin="456,192,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Mult"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="456,316,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Minus"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="410,316,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_Equals"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="456,254,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Plus"/>
-        <Button Content="÷" HorizontalAlignment="Left" Margin="456,130,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Div"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="410,130,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_3"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="366,130,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_2"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="366,192,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_5"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="320,192,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_4"/>
-        <Button Content="1" HorizontalAlignment="Left" Margin="320,130,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_1"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="320,254,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_7"/>
-        <Button Content="0" HorizontalAlignment="Left" Margin="320,316,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_0"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="410,254,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_9"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="366,254,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_8"/>
-        <Button Content="," HorizontalAlignment="Left" Margin="366,316,0,0" VerticalAlignment="Top" Height="62" Width="46"/>
-        <TextBlock x:Name="resultText" HorizontalAlignment="Center" Height="44" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FFDADADA" FontFamily="Arial" FontSize="22"><Run Language="sv-se" Text="0"/></TextBlock>
+        <Label Content="Calc" HorizontalAlignment="Left" Margin="113,19,0,0" VerticalAlignment="Top" Width="36"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="141,180,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_6"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="187,180,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Mult"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="187,304,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Minus"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="141,304,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_Equals"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="187,242,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Plus"/>
+        <Button Content="÷" HorizontalAlignment="Left" Margin="187,118,0,0" VerticalAlignment="Top" Height="62" Width="24" Click="Button_Click_Div"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="141,118,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_3"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="97,118,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_2"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="97,180,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_5"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="51,180,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_4"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="51,118,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_1"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="51,242,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_7"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="51,304,0,0" VerticalAlignment="Top" Width="46" Height="62" Click="Button_Click_0"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="141,242,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_9"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="97,242,0,0" VerticalAlignment="Top" Height="62" Width="46" Click="Button_Click_8"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="97,304,0,0" VerticalAlignment="Top" Height="62" Width="46"/>
+        <TextBlock x:Name="resultText" HorizontalAlignment="Left" Height="44" Margin="51,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FFDADADA" FontFamily="Arial" FontSize="22" TextAlignment="Right" FontWeight="Bold"><Run Language="sv-se" Text="0"/></TextBlock>
+        <TextBlock x:Name="equationText" HorizontalAlignment="Left" Height="24" Margin="51,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FFDADADA" FontSize="14" FontFamily="Arial" TextAlignment="Right" FontStyle="Italic" Text=""/>
     </Grid>
 </Window>

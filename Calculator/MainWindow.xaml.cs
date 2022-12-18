@@ -379,6 +379,8 @@ namespace Calculator
 
                 plus = true;
             }
+
+            equationText.Text = string.Format("{0} +  ", num1);
         }
 
         private void Button_Click_Minus(object sender, RoutedEventArgs e)
@@ -391,6 +393,8 @@ namespace Calculator
 
                 minus = true;
             }
+
+            equationText.Text = string.Format("{0} -  ", num1);
         }
 
         private void Button_Click_Div(object sender, RoutedEventArgs e)
@@ -403,6 +407,8 @@ namespace Calculator
 
                 div = true;
             }
+
+            equationText.Text = string.Format("{0} /  ", num1);
         }
 
         private void Button_Click_Mult(object sender, RoutedEventArgs e)
@@ -415,6 +421,8 @@ namespace Calculator
 
                 mult = true;
             }
+
+            equationText.Text = string.Format("{0} *  ", num1);
         }
 
         private void Button_Click_Equals(object sender, RoutedEventArgs e)
@@ -422,26 +430,39 @@ namespace Calculator
             if (plus)
             {
                 sum = num1+ num2;
+
+                equationText.Text = string.Format("{0} + {1}  ", num1, num2);
             }
 
             if (minus)
             {
                 sum = num1 - num2;
+
+                equationText.Text = string.Format("{0} - {1}  ", num1, num2);
             }
 
             if (div)
             {
                 sum = num1 / num2;
+
+                equationText.Text = string.Format("{0} / {1}  ", num1, num2);
             }
 
             if (mult)
             {
                 sum = num1 * num2;
+
+                equationText.Text = string.Format("{0} * {1}  ", num1, num2);
             }
 
-            resultText.Text = sum.ToString();
+
+            resultText.Text = sum.ToString() + " ";
             
             first = true;
+            plus = false;
+            minus = false;
+            mult = false;
+            div = false;
             num1 = 0;
             num2 = 0;
             tempNum = "";
